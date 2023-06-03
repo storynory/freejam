@@ -1,0 +1,61 @@
+<nav aria-label="Breadcrumb">
+    <ol class="breadcrumbs">
+      <li>
+        <a href="#">Bookstore</a>
+      </li>
+      <li>
+        <a href="#">Fiction</a>
+      </li>
+      <li>
+        <a href="#">Science Fiction</a>
+      </li>
+      <li>
+        <a href="#" aria-current="page">Dystopian</a>
+      </li>
+    </ol>
+  </nav>
+  
+<style>
+.breadcrumbs {
+  font-family: Arial, sans-serif;
+}
+
+.breadcrumbs ol {
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+  font-size: 0.9em;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs li::after {
+  content: '>';
+  margin: 0 10px;
+  color: #333;
+}
+
+.breadcrumbs li:last-child::after {
+  content: '';
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs a[aria-current="page"] {
+  color: #555; /* change this to your preferred color */
+  font-weight: bold; /* makes the current page text bold */
+  pointer-events: none; /* the user can't click or tap the current item */
+  cursor: default; /* changes the cursor style to default */
+  text-decoration: none; /* removes the underline from the current page link */
+}
+
+
+</style>  

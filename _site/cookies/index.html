@@ -1,0 +1,98 @@
+<div class="cookie-banner" role="region" aria-label="Cookies on Our Service">
+    <div class="cookie-banner__message">
+      <h2>Cookies on Our Service</h2>
+      <div class="cookie-banner__content">
+        <p>We use some essential cookies to make this service work.</p>
+        <p>We’d also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+      </div>
+      <div class="button-group">
+        <button value="accept" type="button" name="cookies" class="button">
+          Accept analytics cookies
+        </button>
+        <button value="reject" type="button" name="cookies" class="button">
+          Reject analytics cookies
+        </button>
+        <a href="#">View cookies</a>
+      </div>
+    </div>
+  </div>
+  <style>
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding-bottom: 120px; /* add space for the cookie banner */
+}
+
+.cookie-banner {
+  background-color: #f8f9fa;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cookie-banner__message {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cookie-banner__message h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.cookie-banner__content p {
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button-group a {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.button-group a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cookie-banner__message {
+    font-size: 0.875em;
+  }
+
+  .button {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .button-group a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  </style>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.flower {
+    position: relative;
+    margin: 100px auto;
+    width: 50px;
+    height: 50px;
+    background-color: yellow; /* flower center */
+    border-radius: 50%;
+    animation: spin 5s infinite linear;
+  }
+  
+  .petal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: pink; /* petal color */
+    opacity: 0.7;
+  }
+  
+  .petal:nth-child(1) {
+    transform: rotate(0deg) translate(60px) rotate(0deg);
+  }
+  
+  .petal:nth-child(2) {
+    transform: rotate(72deg) translate(60px) rotate(-72deg);
+  }
+  
+  .petal:nth-child(3) {
+    transform: rotate(144deg) translate(60px) rotate(-144deg);
+  }
+  
+  .petal:nth-child(4) {
+    transform: rotate(216deg) translate(60px) rotate(-216deg);
+  }
+  
+  .petal:nth-child(5) {
+    transform: rotate(288deg) translate(60px) rotate(-288deg);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .petal {
+    animation: bloom 2s infinite ease-in-out;
+  }
+  
+  @keyframes bloom {
+    0% { transform: scale(0.9); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(0.9); }
+  }
+  @keyframes petal1 {
+  0%, 100% { transform: rotate(0deg) translate(60px) rotate(0deg); }
+  50% { transform: rotate(180deg) translate(60px) rotate(-180deg); }
+}
+
+@keyframes petal2 {
+  0%, 100% { transform: rotate(72deg) translate(60px) rotate(-72deg); }
+  50% { transform: rotate(252deg) translate(60px) rotate(-252deg); }
+}
+
+@keyframes petal3 {
+  0%, 100% { transform: rotate(144deg) translate(60px) rotate(-144deg); }
+  50% { transform: rotate(324deg) translate(60px) rotate(-324deg); }
+}
+
+@keyframes petal4 {
+  0%, 100% { transform: rotate(216deg) translate(60px) rotate(-216deg); }
+  50% { transform: rotate(36deg) translate(60px) rotate(-36deg); }
+}
+
+@keyframes petal5 {
+  0%, 100% { transform: rotate(288deg) translate(60px) rotate(-288deg); }
+  50% { transform: rotate(108deg) translate(60px) rotate(-108deg); }
+}
+
+.petal:nth-child(1) {
+  animation: petal1 2s infinite ease-in-out;
+}
+
+.petal:nth-child(2) {
+  animation: petal2 2s infinite ease-in-out;
+}
+
+.petal:nth-child(3) {
+  animation: petal3 2s infinite ease-in-out;
+}
+
+.petal:nth-child(4) {
+  animation: petal4 2s infinite ease-in-out;
+}
+
+.petal:nth-child(5) {
+  animation: petal5 2s infinite ease-in-out;
+}
+
+  </style>
+
+</head>
+<body>
+    <div class="flower">
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+</div>
+
+</body>
+</html>

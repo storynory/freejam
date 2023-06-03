@@ -1,0 +1,66 @@
+<form id="registration-form" class="form">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error-message" id="email-error">Please enter a valid email.</span>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <span class="error-message" id="password-error">Your password must be at least 8 characters.</span>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+
+  <style>
+.form {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  display: none;
+  color: #d00;
+  margin-top: 5px;
+}
+
+.error-message.show {
+  display: block;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+
+  </style>
+  

@@ -1,0 +1,95 @@
+<header class="header" role="banner">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="#" class="header-link header-link--homepage">
+          <span class="header-logotype">
+            <span class="header-logotype-text">Logo</span>
+          </span>
+        </a>
+      </div>
+      <div class="header-search">
+        <form class="header-search-form">
+          <div class="header-search-input-container">
+            <input type="search" id="search-input" class="header-search-input" placeholder="Search..." aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search header-search-icon">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <button type="submit" class="header-search-button">
+            <span class="sr-only">Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <style>
+    .header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+}
+
+.header-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-logotype {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-search-form {
+  display: flex;
+  align-items: center;
+}
+
+.header-search-input-container {
+  position: relative;
+}
+
+.header-search-input {
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.header-search-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.header-search-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust the styles according to your design preferences */
+
+  </style>
